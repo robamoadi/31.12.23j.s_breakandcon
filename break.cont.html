@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>break continue class exercise</title>
+</head>
+<body>
+    <script>
+      let divide=parseInt(prompt("enter a number "))
+      let exit=parseInt(prompt("enter an exit number"))
+      for (let i = 0; i <= 100; i++){
+        if (i % divide == 0) {
+            continue
+        }
+         if (i == exit) {
+            break  
+         }
+        console.log(i)
+        document.write(i + "<br>")
+      }
+      let no_write=parseInt(prompt("enter a number "))
+      let out=parseInt(prompt("enter an exit number"))
+      let number = 0
+      while (number < 100) {
+        number ++ 
+        if (number % no_write == 0) {
+            continue
+        }
+        if (number == out){
+            break
+        }
+        document.write(number)
+      }
+
+
+  </script>
+    
+</body>
+</html>
